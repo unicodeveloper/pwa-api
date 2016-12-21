@@ -24,29 +24,16 @@ module.exports = {
 
   notifyUsers: function(req, res){
 
-    var title = req.body.title || null;
-    var commitMessageTitle = req.body.commits.message || null;
-    var commitUrl = req.body.commits.url || null;
-
-    console.log(commitUrl, commitMessageTitle);
-
     var sender = new gcm.Sender(secrets.fcm);
-
-    console.log(sender);
 
     // Prepare a message to be sent
     var message = new gcm.Message({
-        data: { title: title },
         notification: {
           title: "Hello, World",
           icon: "ic_launcher",
-          body: "This is a correct guy man. Take it!!!"
+          body: "Click to see the latest commit"
         }
     });
-
-    // if(commitUrl === null || commitMessageTitle === null) {
-    //   return res.status(404).json({ success: false, message: "The title is fucking needed" });
-    // }
 
     User.find({}, function(err, users) {
 
