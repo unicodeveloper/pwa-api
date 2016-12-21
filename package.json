@@ -1,0 +1,56 @@
+{
+  "name": "meanmap",
+  "version": "1.0.0",
+  "description": "Mean map is a directory for mean stack developers all over the world",
+  "main": "server.js",
+  "engines": {
+    "node": "0.12.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unicodeveloper/meanmap.git"
+  },
+  "keywords": [
+    "Mean",
+    "Stack",
+    "mean",
+    "meanmap",
+    "angularjs",
+    "expressjs",
+    "nodejs",
+    "mongodb",
+    "developers",
+    "map"
+  ],
+  "author": "Prosper Otemuyiwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unicodeveloper/meanmap/issues"
+  },
+  "homepage": "https://github.com/unicodeveloper/meanmap",
+  "dependencies": {
+    "async": "^1.2.1",
+    "bcrypt": "^0.8.3",
+    "bluebird": "^2.9.27",
+    "body-parser": "^1.12.4",
+    "cors": "^2.7.1",
+    "dotenv": "^1.1.0",
+    "express": "^4.12.4",
+    "fs": "0.0.2",
+    "gravatar": "^1.1.1",
+    "jsonwebtoken": "^5.0.1",
+    "lodash": "^3.10.0",
+    "mongoose": "^4.0.5",
+    "morgan": "^1.5.3",
+    "multiparty": "^4.1.2",
+    "node-gcm": "^0.14.4",
+    "node-uuid": "^1.4.3",
+    "passport": "^0.2.2",
+    "q": "^1.4.1",
+    "slug": "^0.9.1"
+  }
+}
