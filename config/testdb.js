@@ -8,7 +8,7 @@ module.exports = {
   dbconnect: function(){
     db.on('error', console.error.bind( console, 'MongoDB Connection Error. Please make sure that MongoDB is running.'));
     db.once('open', function callback(){
-      console.log('meanmap db opened');
+      console.log('pwa-api db opened');
     });
   }
 };
