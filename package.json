@@ -1,7 +1,7 @@
 {
-  "name": "meanmap",
+  "name": "PWA API",
   "version": "1.0.0",
-  "description": "Mean map is a directory for mean stack developers all over the world",
+  "description": "This is the API for the PWA - Commits",
   "main": "server.js",
   "engines": {
     "node": "0.12.7"
@@ -12,26 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unicodeveloper/meanmap.git"
+    "url": "https://github.com/unicodeveloper/pwa-api.git"
   },
   "keywords": [
-    "Mean",
-    "Stack",
-    "mean",
-    "meanmap",
-    "angularjs",
-    "expressjs",
-    "nodejs",
-    "mongodb",
-    "developers",
-    "map"
+    "pwa",
+    "api",
+    "pwa-api"
   ],
   "author": "Prosper Otemuyiwa",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/unicodeveloper/meanmap/issues"
+    "url": "https://github.com/unicodeveloper/pwa-api/issues"
   },
-  "homepage": "https://github.com/unicodeveloper/meanmap",
+  "homepage": "https://github.com/unicodeveloper/pwa-api",
   "dependencies": {
     "async": "^1.2.1",
     "bcrypt": "^0.8.3",
