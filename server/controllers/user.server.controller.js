@@ -13,10 +13,10 @@ module.exports = {
   },
 
   /**
-   * Register User with username, email and password and other information
+   * Register User with subscription ID
    * @param  req
    * @param  res
-   * @return Void
+   * @return json
    */
   createNewUser: function(req, res){
     var user           = new User();
@@ -24,11 +24,7 @@ module.exports = {
 
     user.save( function(err, users){
       if(err) {
-        if(err.name == 'MongoError' && err.message.indexOf('$email_1') > 0 ) {
-          return res.json({ Error: 'Email is already registered. Please choose another' });
-        }else if ( err.name == 'MongoError' && err.message.indexOf('$username_1') > 0) {
-          return res.json({ Error: 'Username is already taken. Please choose another' });
-        }
+        return res.json({ Error: err });
       } else {
         return res.status(201).json({ success: true, message: "User Created successfully." });
       }
@@ -40,7 +36,7 @@ module.exports = {
    * @param  req
    * @param  res
    * @param  next
-   * @return Void
+   * @return json
    */
   deleteOneUser: function(req, res, next){
     var userId   = req.params.user_id;
