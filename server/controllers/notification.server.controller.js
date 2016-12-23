@@ -1,11 +1,4 @@
  var User       = require('../models/user.server.model'),
-    jwt         = require('jsonwebtoken'),
-    bluebird    = require('bluebird'),
-    Q           = require('q'),
-    fs          = bluebird.promisifyAll(require('fs')),
-    multiparty  = require('multiparty'),
-    uuid        = require('node-uuid'),
-    gravatar    = require('gravatar'),
     _           = require('lodash'),
     gcm         = require('node-gcm'),
     secrets     = require('../../config/secrets');
