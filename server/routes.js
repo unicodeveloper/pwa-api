@@ -1,9 +1,5 @@
 var User          = require('./controllers/user.server.controller'),
-    Notification  = require('./controllers/notification.server.controller'),
-    jwt           = require('jsonwebtoken'),
-    secrets       = require('../config/secrets'),
-    verifyToken   = require('../config/tokenMiddleware'),
-    passport      = require('passport');
+    Notification  = require('./controllers/notification.server.controller');
 
 module.exports = function(app) {
 
