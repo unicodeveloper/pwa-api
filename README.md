@@ -1,34 +1,29 @@
-[![Latest Stable Version](https://img.shields.io/github/release/busayo/meanmap.svg?style=flat-square)](https://github.com/busayo/meanmap/releases)
 ![](https://img.shields.io/badge/unicodeveloper-approved-brightgreen.svg)
 
-## Meanmap
+## PWA-API
 
-Meanmap is an interactive map for Mean Stack Developers all over the world. The mean stack has become one of the biggest communities of fans, contributors and backers worldwide. It provides an avenue where a mean stack developer can easily identify another developer in his local environment especially where there is no local meetup group.
+This is the API for saving, deleting users subscription IDs and sending push notifications for users on [https://github.com/unicodeveloper/pwa-commits](https://github.com/unicodeveloper/pwa-commits).
 
 ## Installation
 
-1. Clone this repository: `git clone git@github.com:busayo/meanmap.git meanmap/`
-2. `cd` into the meanmap folder and run the following commands:
+1. Clone this repository: `git clone git@github.com:unicodeveloper/pwa-api.git pwa-api/`
+2. `cd` into the `pwa-api` folder.
+3. Make a `.env` file by renaming `.env.example` to `.env`.
+4. Now run the following commands:
     1. Run `npm install`
     2. Run `nodemon server.js`
-3. Open your chrome browser and see the application on `localhost:3000`
+3. Open your chrome browser and see the application on `localhost:3333`
+4. Get [Postman](https://www.getpostman.com) and start testing the API
 
 
-## Contributing
+## Tutorial Project
 
-Thank you for considering contributing to Meanmap! The contribution guide is as follows:
+This API was built for the sole purpose of:
 
-#### Submit a pull request in this format:
+* [Introduction to Progressive Web Apps - Part 1](https://auth0.com/blog/introduction-to-progressive-apps-part-one)
+* [Introduction to Progressive Web Apps - Part 2](https://auth0.com/blog/introduction-to-progressive-web-apps-instant-loading-part-2)
+* [Introduction to Progressive Web Apps - Part 3](link-to-part-3)
 
-##### A new feature
-[Meanmap][#Feat] *Short Description of the Feature*
-
-##### A Fix for a bug
-[Meanmap][#Fix] *Short Description of the Fix to a bug on the app*
-
-
-## Security Vulnerabilities
-If you discover a security vulnerability within Meanmap, please send an e-mail to Prosper Otemuyiwa at prosperotemuyiwa@gmail.com. All security vulnerabilities will be promptly addressed.
 
 ### License
-Meanmap is open-sourced software licensed under the [MIT license](https://github.com/busayo/meanmap/blob/master/LICENSE)
+PWA-API is open-sourced software licensed under the [MIT license](https://github.com/unicodeveloper/pwa-api/blob/master/LICENSE)
