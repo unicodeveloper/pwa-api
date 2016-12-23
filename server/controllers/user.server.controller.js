@@ -1,13 +1,4 @@
- var User       = require('../models/user.server.model'),
-    jwt         = require('jsonwebtoken'),
-    bluebird    = require('bluebird'),
-    Q           = require('q'),
-    fs          = bluebird.promisifyAll(require('fs')),
-    multiparty  = require('multiparty'),
-    uuid        = require('node-uuid'),
-    gravatar    = require('gravatar'),
-    _           = require('lodash'),
-    secrets     = require('../../config/secrets');
+ var User       = require('../models/user.server.model');
 
 module.exports = {
 
@@ -64,17 +55,5 @@ module.exports = {
       res.json({success: true, message: 'Delete Successful'});
       next();
     });
-  },
-
-  /**
-   * Fetch All the Users registered on the platform
-   * @param   req
-   * @param   res
-   * @return  void
-   */
-  getAllUsers: function(req, res){
-     User.find({}, function(err, users) {
-        return res.json(users);
-     });
   }
 };
